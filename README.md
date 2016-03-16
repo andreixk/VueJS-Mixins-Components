@@ -18,9 +18,9 @@ just include it in your html code:
 
 html:
 ```html
-<template id="some-component">
+<template id="some-component" v-show="displayed">
 	<div> this is some outer content nobody cares about
-		<div @click="insideClick" v-show="displayed">
+		<div @click="insideClick">
 			do not hide when clicking here!!
 		</div>
 	</div>
