@@ -18,8 +18,8 @@ just include it in your html code:
 
 html:
 ```html
-<template id="some-component" v-show="displayed">
-	<div> this is some outer content nobody cares about
+<template id="some-component">
+	<div v-show="displayed"> this is some outer content nobody cares about
 		<div @click="insideClick">
 			do not hide when clicking here!!
 		</div>
